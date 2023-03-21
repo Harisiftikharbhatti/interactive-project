@@ -1,0 +1,897 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: 'Baloo Bhai 2', cursive;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 172px 3fr 2fr; 
+    grid-template-rows: 1fr; 
+    gap: 10px 20px; 
+    grid-template-areas: 
+      "navbar middle-grid end-grid"; 
+    width: 1440px; 
+    height: 900px;
+}
+
+:root{
+    --white-color: #fff;
+    --black-color: #222;
+}
+
+/* ============================================
+                 Navbar
+================================================ */
+
+.navbar {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "logo logo logo"
+    "menu menu menu"
+    "menu menu menu"
+    "menu menu menu"
+    "logout logout logout"; 
+  justify-self: center; 
+  align-self: center; 
+  grid-area: navbar; 
+  width: 132px; 
+  height: 852px;
+  color: white;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  border-radius: 15px;
+  background-color: black;
+  padding-top: 20px; 
+  }
+
+.logo { 
+  display: grid;
+  grid-area: logo;
+  justify-self: center; 
+  align-self: start;
+  width: 47px; 
+  height: 102px;
+  font-size: 64px;
+}
+
+.menu { 
+  grid-area: menu;
+  display: grid;
+  justify-content: center;
+  padding: 50px; 
+}
+
+
+.logout {
+  grid-area: logout;
+  display: grid;
+  justify-content: center;
+  align-items: end;
+  text-align: center;
+  list-style: none;
+  padding-bottom: 40px;
+}
+
+ul {
+  display: contents;
+  list-style: none;
+}
+
+ul i{
+  font-size: 17px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+  margin: 0;
+}
+/* ------------------ End ----------------------- */
+
+/* ============================================
+                 Middle-grid
+================================================ */
+
+.middle-grid {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  gap: 10px 0px; 
+  grid-template-areas: 
+    "joshmain joshmain joshmain joshmain joshmain"
+    "joshmain joshmain joshmain joshmain joshmain"
+    "mycourse mycourse mycourse mycourse mycourse"
+    "courses courses courses courses courses"
+    "figma figma figma figma figma"
+    "photography photography photography photography photography"
+    "instagram instagram instagram instagram instagram"
+    "drawing drawing drawing drawing drawing"
+    "photoshop photoshop photoshop photoshop photoshop"; 
+  grid-area: middle-grid; 
+  width: 620px; 
+  height: 900px; 
+}
+
+  /* ------------------ End ----------------------- */
+
+
+/* ============================================
+                 josh
+================================================ */
+.joshmain {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "josharea josharea"; 
+  justify-content: center; 
+  align-content: center; 
+  grid-area: joshmain; 
+  width: 620px; 
+  height: 191.25px;
+  position: relative; 
+}
+.josharea {
+  justify-self: center; 
+  align-self: end; 
+  grid-area: josharea; 
+  width: 620px; 
+  display: flex;
+  background-color: #f5f5f7;
+  padding: 48px 32px;
+}
+
+.joshimg {
+  position: absolute;
+  left: 350px;
+}
+
+/* ------------------ End ----------------------- */
+
+/* ============================================
+                 mycourse
+================================================ */
+
+.mycourse {
+  display: grid; 
+  grid-template-columns: 500.26px 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px .5px; 
+  grid-template-areas: 
+    "ca-1 ca-2 ca-3"; 
+  grid-area: mycourse; 
+  width: 620px; 
+  height: 80px; 
+}
+.ca-1 {
+  display: grid; 
+  grid-template-columns: 80px 174px 85px 160px; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "ca-4 ca-5 ca-6 ca-7"
+    "ca-4 ca-5 ca-6 ca-7"; 
+  grid-area: ca-1;
+  background-color: #f5f5f7; 
+  height: 80px;
+}
+.ca-4 { 
+  grid-area: ca-4;
+  display: grid;
+  justify-self: center; 
+  align-self: center; 
+  width: 64px; 
+  height: 64px; 
+  background-color: white;
+}
+
+.spainimg {
+  display: grid;
+  justify-self: center;
+  align-self: center;
+}
+.ca-5 { 
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "ca-8"
+    "ca-9"; 
+  justify-self: center; 
+  align-self: center; 
+  grid-area: ca-5; 
+  width: 150px;
+}
+
+.ca-8 { 
+  grid-area: ca-8;
+  font-size: 16px;
+  margin: 0px;
+ }
+.ca-9 { 
+  grid-area: ca-9;
+  font-size: 13px;
+  margin: 0px;
+}
+.ca-6 { 
+  grid-area: ca-6;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.ca-6a {
+  position: absolute;
+  left: 31px;
+  font-size: 13px;
+}
+.ca-7 { 
+  grid-area: ca-7;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+ }
+
+.ca-7 button{
+  padding: 8px 24px;
+  background-color: #222;
+  color:#fff;
+  font-size: 13px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.ca-2 { 
+  grid-area: ca-2;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.ca-3 { 
+  grid-area: ca-3;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+/* ------------------ End ----------------------- */
+
+/* ============================================
+                 course-selection
+================================================ */
+
+.courses {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "co-1 co-1 co-1 co-1"
+    "co-2 co-2 co-2 co-2"; 
+  grid-area: courses; 
+}
+.co-1 { 
+  grid-area: co-1;
+  font-weight: 400;
+  font-size: 24px;
+ }
+
+ .co-2 {
+  display: grid; 
+  grid-auto-flow: column; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 10px 0px; 
+  grid-template-areas: 
+    ". . . ."; 
+  grid-area: co-2;
+  padding-right: 174px; 
+}
+
+.co-3 {
+  opacity: 30%;
+}
+
+.figma {
+  display: grid;
+  grid-template-columns: 66px 180px 90px 1fr 150px;
+  grid-template-rows: 1fr;
+  gap: 0px 15px;
+  grid-template-areas: "f-1 f-2 f-3 f-4 f-5";
+  grid-area: figma;
+  width: 620px;
+  height: 80px;
+  background-color: #f6f6f7;
+  padding: 8px;
+}
+
+.f-1 {
+  display: grid;
+  justify-content: center; 
+  align-content: center; 
+  grid-area: f-1; 
+  width: 64px; 
+  background-color: white;
+} 
+
+.f-2 {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "."
+    "."; 
+  grid-area: f-2; 
+}
+
+.f-3 { 
+  grid-area: f-3;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: 7px; 
+}
+
+.f-3-1 {
+  font-size: 13px;
+  padding-top: 2px;
+}
+
+.f-4 { 
+  grid-area: f-4;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;  
+}
+
+.f-4-1 {
+  font-size: 13px;
+  padding-top: 2px;
+}
+
+
+.f-5 { 
+  grid-area: f-5;
+  display: grid;
+  justify-self: center; 
+  align-self: center; 
+  width: 120px; 
+  height: 40px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px; 
+}
+
+.f-5-1 {
+  font-size: 13px;
+  font-weight: bold;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.photography {
+  display: grid;
+  grid-template-columns: 66px 180px 90px 1fr 150px;
+  grid-template-rows: 1fr;
+  gap: 0px 15px;
+  grid-template-areas: "p-1 p-2 p-3 p-4 p-5";
+  grid-area: photography;
+  width: 620px;
+  height: 80px;
+  background-color: #f6f6f7;
+  padding: 8px;
+}
+
+.p-1 {
+  display: grid;
+  justify-content: center; 
+  align-content: center; 
+  grid-area: p-1; 
+  width: 64px; 
+  background-color: white;
+} 
+
+.p-2 {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "."
+    "."; 
+  grid-area: p-2; 
+}
+
+.p-3 { 
+  grid-area: p-3;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;  
+}
+
+.p-3-1 {
+  font-size: 13px;
+  padding-top: 2px;
+}
+
+.p-4 { 
+  grid-area: p-4;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.p-5 { 
+  grid-area: p-5;
+  display: grid;
+  justify-self: center; 
+  align-self: center; 
+  width: 120px; 
+  height: 40px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+ }
+
+.p-5-1 {
+  font-size: 13px;
+  font-weight: bold;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagram {
+  display: grid;
+  grid-template-columns: 66px 180px 90px 1fr 150px;
+  grid-template-rows: 1fr;
+  gap: 0px 15px;
+  grid-template-areas: "i-1 i-2 i-3 i-4 i-5";
+  grid-area: instagram;
+  width: 620px;
+  height: 80px;
+  background-color: #f6f6f7;
+  padding: 8px;
+}
+
+.i-1 {
+  display: grid;
+  justify-content: center; 
+  align-content: center; 
+  grid-area: i-1; 
+  width: 64px; 
+  background-color: white;
+} 
+
+.i-2 {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "."
+    "."; 
+  grid-area: i-2; 
+}
+
+.i-3 { 
+  grid-area: i-3;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;  
+}
+
+.i-3-1 {
+  font-size: 13px;
+  padding-top: 2px;
+}
+
+.i-4 { 
+  grid-area: i-4;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.i-5 { 
+  grid-area: i-5;
+  display: grid;
+  justify-self: center; 
+  align-self: center; 
+  width: 120px; 
+  height: 40px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+ }
+
+.i-5-1 {
+  font-size: 13px;
+  font-weight: bold;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.drawing {
+  display: grid;
+  grid-template-columns: 66px 180px 90px 1fr 150px;
+  grid-template-rows: 1fr;
+  gap: 0px 15px;
+  grid-template-areas: "d-1 d-2 d-3 d-4 d-5";
+  grid-area: drawing;
+  width: 620px;
+  height: 80px;
+  background-color: #f6f6f7;
+  padding: 8px;
+}
+
+.d-1 {
+  display: grid;
+  justify-content: center; 
+  align-content: center; 
+  grid-area: d-1; 
+  width: 64px; 
+  background-color: white;
+} 
+
+.d-2 {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "."
+    "."; 
+  grid-area: d-2; 
+}
+
+.d-3 { 
+  grid-area: d-3;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;  
+}
+
+.d-3-1 {
+  font-size: 13px;
+  padding-top: 2px;
+}
+
+.d-4 { 
+  grid-area: d-4;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.d-5 { 
+  grid-area: d-5;
+  display: grid;
+  justify-self: center; 
+  align-self: center; 
+  width: 120px; 
+  height: 40px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+ }
+
+.d-5-1 {
+  font-size: 13px;
+  font-weight: bold;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.photoshop {
+  display: grid;
+  grid-template-columns: 66px 180px 90px 1fr 150px;
+  grid-template-rows: 1fr;
+  gap: 0px 15px;
+  grid-template-areas: "ps-1 ps-2 ps-3 ps-4 ps-5";
+  grid-area: photoshop;
+  width: 620px;
+  height: 80px;
+  background-color: #f6f6f7;
+  padding: 8px;
+}
+
+.ps-1 {
+  display: grid;
+  justify-content: center; 
+  align-content: center; 
+  grid-area: ps-1; 
+  width: 64px; 
+  background-color: white;
+} 
+
+.ps-2 {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "."
+    "."; 
+  grid-area: ps-2; 
+}
+
+.ps-3 { 
+  grid-area: ps-3;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;  
+}
+
+.ps-3-1 {
+  font-size: 13px;
+  padding-top: 2px;
+}
+
+.ps-4 { 
+  grid-area: ps-4;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.ps-5 { 
+  grid-area: ps-5;
+  display: grid;
+  justify-self: center; 
+  align-self: center; 
+  width: 120px; 
+  height: 40px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+ }
+
+.ps-5-1 {
+  font-size: 13px;
+  font-weight: bold;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ------------------ End ----------------------- */
+
+/* ============================================
+                 end-grid
+================================================ */
+
+.end-grid {
+  display: grid; 
+  grid-template-columns: 440px; 
+  grid-template-rows: 43px 107px 386px 1fr;
+  padding-top: 30px;
+  padding-bottom: 30px; 
+  gap: 25px 0px; 
+  grid-template-areas: 
+    "navigation"
+    "course-completed"
+    "statistics"
+    "premium"; 
+  grid-area: end-grid; 
+  width: 440px; 
+  height: 900px; 
+}
+
+
+  /* ------------------ End ----------------------- */
+
+/* ============================================
+                 navigation
+================================================ */
+
+.navigation {
+  display: grid; 
+  grid-template-columns: 300px 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 5px; 
+  grid-template-areas: 
+    "navg1 navg2 navg3"; 
+  grid-area: navigation; 
+}
+.navg1 { 
+  grid-area: navg1;
+  background-color: #f5f5f7;
+  display: grid;
+  align-items: center;
+  padding: 10px;
+}
+.navg2 { 
+  grid-area: navg2;
+  justify-self: center;
+  align-items: center;
+}
+.navg3 { 
+  grid-area: navg3;
+  justify-self: center;
+  align-items: center; 
+}
+/* ------------------ End ----------------------- */
+
+/* ============================================
+                 course-completed
+================================================ */
+
+.course-completed {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 22px; 
+  grid-template-areas: 
+    "c-c-1 c-c-2"; 
+  grid-area: course-completed; 
+}
+
+.c-c-1 { 
+  grid-area: c-c-1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f6f6f7; 
+}
+
+.c-c-2 { 
+  grid-area: c-c-2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f6f6f7; 
+}
+
+.c-c-t-1 {
+  font-size: 64px;
+}
+
+.c-c-t-2 {
+  font-size: 20px;
+}
+/* ------------------ End ----------------------- */
+
+/* ============================================
+                 Statistics
+================================================ */
+
+.statistics {
+  display: grid; 
+  grid-template-columns: 440px; 
+  grid-template-rows: 1fr 271px; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "stats-1"
+    "stats-2"; 
+  grid-area: statistics; 
+  }
+  
+.stats-1 { 
+  grid-area: stats-1; 
+}
+
+.stat-1-1 {
+
+}
+
+.stat-1-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat-1-2-1 {
+  display: flex;
+  gap: 20px;
+}
+
+.stats-2 { 
+  grid-area: stats-2; 
+}
+
+.stat-t-1 {
+ font-size: 24px;
+}
+
+.stat-t-2 {
+
+}
+
+.stat-t-3 {
+ opacity: 30%;
+}
+
+.stat-t-4 {
+
+}
+/* ------------------ End ----------------------- */
+
+/* ============================================
+                 premium
+================================================ */
+
+.premium {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "pr-1 pr-2";
+  grid-area: premium;
+  background-color: #f6f6f7; 
+}
+.pr-1 { 
+  grid-area: pr-1; 
+  display: grid;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 25px;
+}
+.pr-2 { 
+  display: grid;
+  grid-area: pr-2;
+  align-items: center;
+  justify-items: center; 
+}
+
+.pr-t-1 {
+  font-size: 25px;
+}
+
+.pr-t-2 {
+  font-size: 16px;
+}
+
+.pr-t-3 {
+  padding: 5px 5px;
+  background-color: #222;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  width: 90px;
+  height: 30px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ------------------ End ----------------------- */
